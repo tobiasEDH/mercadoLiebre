@@ -22,6 +22,6 @@ app.get('/login', (req,res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'))
 })
 
-app.listen(8080, () => {
-    console.log("Servidor en el puerto 8080")
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Servidor en el puerto https://localhost" + PORT)
 })
